@@ -9,8 +9,9 @@ env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: tva    # Add your cluster name here.
   GKE_ZONE: us-central1-a   # Add your cluster zone here.
-  DEPLOYMENT_NAME: arianne-api # Add your deployment name here.
-  IMAGE: arianne-api
+  DEPLOYMENT_NAME: dev-stedi-arianne # Add your deployment name here.
+  IMAGE: us-docker.pkg.dev/my-devops-team/arianne-api/stedi-api:latest # IMAGE NEEDS TO BE ARTIFACT REGISTRY NEW REPOSITORY
+
 
 jobs:
   setup-build-publish-deploy:
